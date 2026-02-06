@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<title>Step1 测试 · 模块化脚本环境</title>
+<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+
+<script src="engine/virtual_excel.js"></script>
+<script src="engine/runner.js"></script>
+
+<style>
+  body { font-family: system-ui; padding: 20px; }
+  #log { background:#0f172a;color:#9ae6b4;padding:10px;border-radius:8px;height:200px;overflow:auto;font-size:12px;font-family:monospace; }
+</style>
+</head>
+<body>
+
+<h2>Step1 测试 · 模块化脚本环境</h2>
+
+<input type="file" id="fileInput" />
+<button onclick="runStep('scripts/step1_code.js')">运行 Step1</button>
+
+<h3>日志</h3>
+<div id="log"></div>
+
+</body>
+</html>
